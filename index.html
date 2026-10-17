@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f8c9d4" />
+  <meta name="description" content="Sweet Crumbs — cakes, cupcakes, brownies and little boxes of happiness in Johar Town, Lahore." />
+  <title>Sweet Crumbs 🍰 | A little slice of happy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="announcement"><span>♡</span> Baked with love in Lahore <span>♡</span> <b>Custom cakes need 2 days' notice!</b></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Sweet Crumbs home"><span class="brand-mark">SC<span>✦</span></span><span class="brand-name">sweet crumbs<small>BAKERY & LITTLE JOYS</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="navLinks"><a href="#menu">The menu</a><a href="#custom">Custom cakes</a><a href="#story">Our story</a><a href="#gallery">Cake diary</a><a class="nav-order" href="#order">Let's order <span>↗</span></a></nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-scribble scribble-one">✳</div><div class="hero-scribble scribble-two">♡</div>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> A LITTLE SWEETNESS GOES A LONG WAY</div>
+        <h1>Good days<br>start with <em>cake.</em></h1>
+        <p>Big feelings, tiny celebrations, “just because” Tuesdays — there's a sweet little something for all of it.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#menu">Find your treat <span>↗</span></a><a class="text-link" href="#custom">Dreaming of a custom cake? <span>♡</span></a></div>
+        <div class="hero-note"><span class="note-star">✦</span><span><b>Made fresh, always.</b><small>From our kitchen in Johar Town, Lahore.</small></span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-sticker sticker-top">BAKED<br>WITH ♡</div>
+        <div class="hero-image-wrap"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85" alt="Celebration cake with creamy frosting" /></div>
+        <div class="hero-caption"><span>the main character</span><strong>Birthday Cake</strong><span class="caption-heart">♡</span></div>
+        <div class="hero-sticker sticker-bottom">ONE BITE<br>HAPPIER ✿</div>
+      </div>
+      <div class="hero-bottom-line"><span>CAKES</span><i>✳</i><span>CUPCAKES</span><i>✳</i><span>BROWNIES</span><i>✳</i><span>HAPPY LITTLE DESSERTS</span></div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-heading">
+        <div><span class="eyebrow">THE GOOD STUFF</span><h2>Meet your <em>new fave.</em></h2></div>
+        <p>Made for sharing. Also made for keeping all to yourself. We don't judge.</p>
+      </div>
+      <div class="filter-row" id="filters"><button class="filter active" data-filter="All">Everything <span>✦</span></button><button class="filter" data-filter="Cakes">Cakes</button><button class="filter" data-filter="Cupcakes">Cupcakes</button><button class="filter" data-filter="Brownies">Brownies</button><button class="filter" data-filter="Dessert boxes">Dessert boxes</button></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="menu-footnote"><span>✿</span> Can't find your dream flavour? <a href="#custom">Let's make it happen →</a></div>
+    </section>
+
+    <section class="custom-band" id="custom">
+      <div class="custom-doodle">♡<br>✳</div>
+      <div class="custom-copy"><span class="eyebrow">YOUR IDEA, OUR ICING</span><h2>Got a cake<br>in your <em>head?</em></h2><p>Send us your inspo, tell us the vibe, and we'll bake something that's so you.</p><ul><li>✿ Birthdays & little milestones</li><li>✿ Your favourite flavours</li><li>✿ Reference pictures welcome</li><li>✿ Lahore delivery — area confirmed with you</li></ul></div>
+      <form class="custom-form" id="customForm">
+        <div class="form-top"><span>LET'S MAKE A LITTLE MAGIC</span><span class="form-heart">♡</span></div>
+        <label>Your name<input name="name" required placeholder="What should we call you?" /></label>
+        <div class="form-two"><label>Phone / WhatsApp<input name="phone" required placeholder="03xx xxxxxxx" /></label><label>Occasion<select name="occasion" required><option value="">Choose one</option><option>Birthday</option><option>Wedding</option><option>Anniversary</option><option>Baby shower</option><option>Just because</option><option>Other</option></select></label></div>
+        <div class="form-two"><label>When do you need it?<input name="date" type="date" required /></label><label>Size / servings<input name="size" placeholder="e.g. 1.5 lb / 10 people" required /></label></div>
+        <label>Flavour & cake dreams<textarea name="details" rows="3" required placeholder="Chocolate, pink bows, a little vintage piping... tell us everything!"></textarea></label>
+        <label class="upload-label">Reference picture (optional)<input name="reference" type="file" accept="image/*" /><small>We'll attach the file in a later step if you send the request through WhatsApp.</small></label>
+        <label>Your area in Lahore<input name="area" required placeholder="e.g. Johar Town, DHA Phase 6..." /></label>
+        <button class="button button-dark full" type="submit">Send my cake request <span>↗</span></button>
+        <p class="form-small">Custom cakes need at least 2 days' notice. Wedding cakes need 3 days. We'll confirm price, delivery charges and availability with you.</p>
+        <div class="form-feedback" id="customFeedback" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="section story-section" id="story">
+      <div class="story-photo"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85" alt="Fresh pastries ready to be enjoyed"><span class="photo-stamp">A LITTLE<br>JOY, DAILY ✿</span></div>
+      <div class="story-copy"><span class="eyebrow">HI, SWEET THING!</span><h2>Not just dessert.<br>It's a <em>whole mood.</em></h2><p>Sweet Crumbs started with a simple idea: life's little moments deserve something delicious. For two years, we've been making cakes, cupcakes and brownies for Lahore's birthdays, surprises, and “you made it through the week” celebrations.</p><p>Every order is made with care, a little creativity, and a lot of love. We're so glad you're here.</p><a class="button button-outline" href="#order">Come say hello <span>♡</span></a><div class="signature">sweet things, always <span>♡</span></div></div>
+    </section>
+
+    <section class="gallery-section" id="gallery"><div class="section-heading"><div><span class="eyebrow">THE CAKE DIARY</span><h2>Too cute to <em>eat.</em></h2></div><p>A tiny peek at the sweet things coming out of our kitchen.</p></div><div class="gallery-grid"><figure class="gallery-tall"><img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=900&q=85" alt="Pretty decorated cupcakes"><figcaption>little swirls of happiness</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=85" alt="Rich chocolate brownies"><figcaption>chocolate fixes everything</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=85" alt="Creamy dessert in a glass"><figcaption>one more spoonful</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?auto=format&fit=crop&w=700&q=85" alt="Layered cake with frosting"><figcaption>made for your moment</figcaption></figure></div></section>
+
+    <section class="review-section"><div class="review-star">✳</div><span class="eyebrow">DON'T JUST TAKE OUR WORD FOR IT</span><h2>Love notes from<br>our <em>sweet people.</em></h2><div class="review-cards"><article class="review-card"><div class="stars">★★★★★</div><p>“The cake was honestly the cutest thing ever. And it tasted even better than it looked!”</p><span>— A happy customer ♡</span></article><article class="review-card review-card-pink"><div class="stars">★★★★★</div><p>“Ordered brownies for my friends and now everyone wants the bakery's number. 10/10.”</p><span>— A brownie believer ♡</span></article><article class="review-card"><div class="stars">★★★★★</div><p>“They understood my Pinterest inspo perfectly. The whole birthday felt extra special.”</p><span>— A custom-cake girlie ♡</span></article></div><p class="review-disclaimer">Sample layout — replace these with real customer reviews before launch.</p></section>
+
+    <section class="order-section" id="order"><div class="order-inner"><div><span class="eyebrow">LET'S MAKE YOUR DAY SWEETER</span><h2>Your next happy<br>thing is <em>right here.</em></h2><p>Tell us what you're craving. We'll help you sort the flavour, the size, and the little details.</p></div><div class="order-actions"><a class="button button-dark" href="#menu">Browse the menu ↗</a><a class="button button-pink" href="#custom">Order a custom cake ♡</a><span>📍 Johar Town, Lahore · Delivery across Lahore</span></div></div></section>
+  </main>
+  <footer class="footer">
+    <div class="footer-top"><a class="brand footer-brand" href="#home"><span class="brand-mark">SC<span>✦</span></span><span class="brand-name">sweet crumbs<small>BAKERY & LITTLE JOYS</small></span></a><p>A little sugar, a little love,<br>and a whole lot of happy.</p><div class="footer-links"><a href="#menu">Menu</a><a href="#custom">Custom orders</a><a href="#gallery">Cake diary</a><a href="#story">Our story</a></div></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Sweet Crumbs. Baked with love in Lahore.</span><span>Made for the sweet tooth in you ♡</span><button id="adminOpen" class="admin-link" type="button">Owner login</button></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="admin-overlay" id="adminOverlay" hidden>
+    <div class="admin-panel">
+      <button class="admin-close" id="adminClose" aria-label="Close dashboard">×</button>
+      <div id="adminLogin"><span class="eyebrow">SWEET CRUMBS HQ</span><h2>Hey, boss! <em>♡</em></h2><p class="admin-intro">This demo dashboard saves changes in this browser only. Connect the secure database before using it for live business.</p><label>Dashboard password<input type="password" id="adminPassword" placeholder="Enter demo password" /></label><button class="button button-dark full" id="adminLoginBtn">Open dashboard ↗</button><small>Demo password: <b>crumbs-demo</b></small></div>
+      <div id="adminDashboard" hidden><span class="eyebrow">YOUR LITTLE BAKERY EMPIRE</span><h2>Product <em>drawer.</em></h2><p class="admin-intro">Edit names and prices, hide sold-out treats, or add a new favourite. Changes stay on this device until database setup.</p><form id="productForm" class="admin-product-form"><input type="hidden" name="id"><label>Product name<input name="name" required placeholder="e.g. Strawberry dream cake"></label><div class="form-two"><label>Category<select name="category"><option>Cakes</option><option>Cupcakes</option><option>Brownies</option><option>Dessert boxes</option></select></label><label>Price (PKR)<input name="price" type="number" min="1" required placeholder="2500"></label></div><label>Short description<input name="description" required placeholder="What makes it special?"></label><label>Photo URL<input name="image" placeholder="https://... (optional)"></label><button class="button button-dark full" type="submit">Save product +</button></form><div id="adminProducts" class="admin-products"></div><button class="button button-outline full" id="adminLogout">Log out</button></div>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
